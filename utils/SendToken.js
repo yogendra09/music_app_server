@@ -6,7 +6,7 @@ exports.sendtoken = (user, statuscode, res) => {
       Date.now() + process.env.COOKIE_EXPIRE * 24 * 60 * 60 * 1000
     ),
     secure: true,
-    httpOnly: true,
+    // httpOnly: true,
     // jab https par chalyege tab kar denge secure true
   };
   res
